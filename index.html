@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visita - WR Soluções Digitais</title>
+    <!-- Carrega o Tailwind CSS para o design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega ícones (para os botões) -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        /* Define a fonte Inter como padrão, que é moderna e limpa */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ajuste para garantir que o gradiente de fundo cubra toda a tela */
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-4 md:p-8">
+
+    <!-- O contêiner principal do cartão -->
+    <!-- A classe 'mx-auto' aqui já centraliza o cartão horizontalmente -->
+    <div class="bg-gray-800 w-full max-w-md mx-auto rounded-2xl shadow-2xl p-6 md:p-8 transform transition-all">
+
+        <!-- 1. Seção de Identidade (Logo e Empresa) -->
+        <header class="flex flex-col items-center text-center space-y-4">
+            <!-- Logo de texto simples e profissional -->
+            <div class="flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full shadow-lg">
+                <span class="text-white font-bold text-4xl">WR</span>
+            </div>
+            <div class="flex flex-col">
+                <h1 class="text-3xl font-bold text-white">WR Soluções Digitais</h1>
+                <!-- Este é o Slogan que discutimos -->
+                <p class="text-lg text-blue-300 font-light">
+                    O suporte técnico que sua empresa precisa.
+                </p>
+            </div>
+        </header>
+
+        <!-- 2. Seção de Ações Principais (CTAs) -->
+        <section class="mt-8 space-y-4">
+            <!-- 
+              IMPORTANTE: Altere o número de telefone abaixo para o WhatsApp de vocês.
+              Formato: 55 (Brasil) + DD (Ex: 11) + Número (Ex: 987654321)
+            -->
+            <a href="https://wa.me/5511999998888" target="_blank" rel="noopener noreferrer"
+               class="flex items-center justify-center w-full bg-green-500 hover:bg-green-600 text-white font-medium p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <ion-icon name="logo-whatsapp" class="text-2xl mr-3"></ion-icon>
+                Iniciar Conversa no WhatsApp
+            </a>
+            
+            <!-- 
+              IMPORTANTE: Altere o e-mail abaixo para o e-mail profissional de vocês.
+            -->
+            <a href="mailto:contato@wrsolucoes.com.br"
+               class="flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-medium p-4 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                <ion-icon name="mail-outline" class="text-2xl mr-3"></ion-icon>
+                Enviar E-mail
+            </a>
+        </section>
+
+        <!-- 3. Seção dos Sócios (Autoridade) -->
+        <section class="mt-8 pt-6 border-t border-gray-700">
+            <h2 class="text-xl font-semibold text-center text-white mb-6">Nossos Sócios-Administradores</h2>
+            <div class="space-y-4">
+
+                <!-- Raphael Ferrari -->
+                <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover" src="https://placehold.co/100x100/3B82F6/FFFFFF?text=RF" alt="Raphael Ferrari">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-medium text-white">Raphael Ferrari</h3>
+                        <p class="text-sm text-blue-300">Sócio-Administrador</p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/raphael-ferrari-16b919199/" target="_blank" rel="noopener noreferrer"
+                       class="p-2 bg-gray-600 hover:bg-blue-600 rounded-full text-white transition-colors">
+                        <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+                    </a>
+                </div>
+
+                <!-- Wallace Souza -->
+                <div class="bg-gray-700 rounded-lg p-4 flex items-center space-x-4">
+                    <img class="w-12 h-12 rounded-full object-cover" src="https://placehold.co/100x100/3B82F6/FFFFFF?text=WS" alt="Wallace Souza">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-medium text-white">Wallace Souza</h3>
+                        <p class="text-sm text-blue-300">Sócio-Administrador</p>
+                    </div>
+                    <a href="https://www.linkedin.com/in/wallace-souza-924b25298/" target="_blank" rel="noopener noreferrer"
+                       class="p-2 bg-gray-600 hover:bg-blue-600 rounded-full text-white transition-colors">
+                        <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Seção de Serviços (Foco) -->
+        <section class="mt-8 pt-6 border-t border-gray-700">
+            <h2 class="text-xl font-semibold text-center text-white mb-4">Serviços Principais</h2>
+            <ul class="space-y-2 text-gray-300">
+                <li class="flex items-center">
+                    <ion-icon name="checkmark-circle-outline" class="text-blue-400 text-xl mr-2"></ion-icon>
+                    Suporte Técnico e Help Desk
+                </li>
+                <li class="flex items-center">
+                    <ion-icon name="checkmark-circle-outline" class="text-blue-400 text-xl mr-2"></ion-icon>
+                    Gestão e Monitoramento de Redes
+                </li>
+                <li class="flex items-center">
+                    <ion-icon name="checkmark-circle-outline" class="text-blue-400 text-xl mr-2"></ion-icon>
+                    Consultoria em Infraestrutura de TI
+                </li>
+                <li class="flex items-center">
+                    <ion-icon name="checkmark-circle-outline" class="text-blue-400 text-xl mr-2"></ion-icon>
+                    Análise de Segurança da Informação
+                </li>
+            </ul>
+        </section>
+
+        <!-- 5. Rodapé (Website) -->
+        <footer class="mt-8 pt-6 text-center border-t border-gray-700">
+            <!-- 
+              IMPORTANTE: Quando tiver o site, coloque o link aqui.
+              Por enquanto, deixei como placeholder.
+            -->
+            <a href="#" target="_blank" rel="noopener noreferrer"
+               class="text-blue-400 hover:text-blue-300 transition-colors">
+                www.wrsolucoes.com.br
+            </a>
+            <p class="text-xs text-gray-500 mt-2">
+                &copy; 2025 WR Soluções Digitais. Todos os direitos reservados.
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
